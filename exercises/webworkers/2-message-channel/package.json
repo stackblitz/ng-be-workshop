@@ -1,0 +1,9 @@
+{
+  "name": "ng-be-webworkers-message-channel",
+  "scripts": {
+    "start": "lite-server -c browsersync.config.js"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

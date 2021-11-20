@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NG-BE WebWorkers MessageChannel</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="a" /> &lt;-&gt;
+      <input type="text" id="b" />
+      <button id="swap">Swap</button>
+    </div>
+
+    <script type="module">
+      import { swap } from './swap.mjs';
+
+      const aEl = document.getElementById('a');
+      const bEl = document.getElementById('b');
+      const swapEl = document.getElementById('swap');
+
+      swapEl.addEventListener('click', async () => {
+        const [newA, newB] = await swap(aEl.value, bEl.value);
+
+        aEl.value = newA;
+        bEl.value = newB;
+      });
+    </script>
+  </body>
+</html>

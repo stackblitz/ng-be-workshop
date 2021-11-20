@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NG-BE Fibonacci WebWorkers Terminate</title>
+  </head>
+  <body>
+    <div>
+      fib(<input id="input" type="number" style="width: 50px" />) =
+      <span id="result">??</span>
+    </div>
+
+    <button id="calculate">Calculate</button>
+
+    <div id="counter" style="text-align: right">1</div>
+
+    <script type="module">
+      import { fibonacci } from './fibonacci.mjs';
+
+      const inputEl = document.getElementById('input');
+      const resultEl = document.getElementById('result');
+      const counterEl = document.getElementById('counter');
+      const calculateEl = document.getElementById('calculate');
+
+      calculateEl.addEventListener('click', async () => {
+        try {
+          resultEl.innerHTML = '??';
+
+          const value = await fibonacci(inputEl.valueAsNumber);
+
+          if (typeof value === 'number') {
+            resultEl.innerHTML = value;
+          }
+        } catch (error) {
+          resultEl.innerHTML = error.message;
+        }
+      });
+
+      let counter = 2;
+
+      setInterval(() => {
+        counterEl.innerHTML = counter++;
+      }, 1000);
+    </script>
+  </body>
+</html>

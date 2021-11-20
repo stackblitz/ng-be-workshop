@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let todo of todos" (click)="onRemove(todo.id)">
+    {{ todo.todo }}
+  </li>
+</ul>

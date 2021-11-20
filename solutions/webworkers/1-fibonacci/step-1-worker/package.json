@@ -1,0 +1,9 @@
+{
+  "name": "fibonacci-step2-webworker",
+  "scripts": {
+    "start": "lite-server -c browsersync.config.js"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
