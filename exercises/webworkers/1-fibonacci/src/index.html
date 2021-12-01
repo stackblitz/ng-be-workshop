@@ -13,8 +13,14 @@
 
     <div id="counter" style="text-align: right">1</div>
 
-    <script type="module">
-      import { fibonacci } from './fibonacci.mjs';
+    <script type="text/javascript">
+      function fibonacci(position) {
+        if (position < 2) {
+          return position;
+        }
+
+        return fibonacci(position - 1) + fibonacci(position - 2);
+      }
 
       const inputEl = document.getElementById('input');
       const resultEl = document.getElementById('result');
