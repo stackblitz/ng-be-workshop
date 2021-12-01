@@ -1,0 +1,3 @@
+<input type="text" #todo />
+
+<button (click)="onAdd(todo.value); todo.value = ''">Add</button>
