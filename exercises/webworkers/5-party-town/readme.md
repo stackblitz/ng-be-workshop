@@ -1,6 +1,6 @@
 # Party town starter
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/5-party-town?file=src%2Findex.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/5-party-town?file=src%2Findex.html)
 
 This example mimics the way the party town library works.
 

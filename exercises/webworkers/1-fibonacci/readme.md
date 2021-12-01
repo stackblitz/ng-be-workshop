@@ -1,6 +1,6 @@
 # Fibonacci Starter
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/1-fibonacci?file=src%2Findex.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/1-fibonacci?file=src%2Findex.html)
 
 This example calculates the n-th [fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) number.
 

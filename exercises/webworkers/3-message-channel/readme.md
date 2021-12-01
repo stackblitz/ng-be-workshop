@@ -1,6 +1,6 @@
 # Swap Starter
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/3-message-channel?file=src%2Findex.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/3-message-channel?file=src%2Findex.html)
 
 The idea of this exercise is to create two WebWorkers that communicate with each other over a 
 [`MessageChannel`](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel).
