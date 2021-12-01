@@ -1,6 +1,6 @@
 # Angular Fibonacci
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/2-angular-fibonacci?file=README.md)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/2-angular-fibonacci?file=src%2Fapp%2Ffibonacci%2Ffibonacci.component.ts)
 
 This projects implements the same fibonacci UI as the the first project but using Angular instead.
 
