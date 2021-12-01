@@ -20,7 +20,7 @@ Adapt the SAB to follow the data structure described below. This means that writ
 
 The following data structure makes sure that 
 
-<!-- * +-----------------------------------
+ * +----------------------------------------+
  * |                                        |
  * |  |- RESERVED BYTES  |- VARIABLE ----|  |
  * |                                        |
@@ -31,4 +31,4 @@ The following data structure makes sure that
  * |                                        |
  * |  < - 4 Bytes --- >  <- N Bytes ---- >  |
  * |                                        |
- * +---------------------------------------->
+ * +----------------------------------------+
