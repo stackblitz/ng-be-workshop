@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ng-be WebWorkers</title>
+  </head>
+  <body>
+    <script type="module">
+      const worker = new Worker('./partyTown.js', {
+        name: 'PartyTownMock',
+        type: 'module',
+      });
+
+      // Create the SharedArrayBuffer
+      const sab = new SharedArrayBuffer(100);
+      // Create a int32 View
+      const int32 = new Int32Array(sab);
+      // Create a uint8 View
+      const uint8 = new Uint8Array(sab);
+
+      worker.onmessage = (event) => {
+        if (!event.data) {
+          return;
+        }
+
+        // Property is on `event.data`
+
+
+      };
+
+      // Send the SAB that will be used for communication
+      worker.postMessage({ sab });
+
+      // Let's execute the fake google analytics script
+      worker.postMessage({
+        type: 'google_analytics',
+      });
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
-# Fibonacci Worker Abort
+# Party town 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/solutions/webworkers/1-fibonacci/step-3-worker-abort?file=src%2Findex.html)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/solutions/webworkers/4-party-town?file=src%2Findex.html)
 
-This project is the solution for Exercise 3 of the [`Fibonacci`](../../../exercises/webworkers/1-fibonacci) project.
+This project is the solution for Exercise 4 of the [`Fibonacci`](../../../exercises/webworkers/4-party-town) project.
