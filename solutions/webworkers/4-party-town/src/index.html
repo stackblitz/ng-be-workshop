@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ng-be WebWorkers</title>
+  </head>
+  <body>
+    <script type="module">
+      const worker = new Worker('./partyTown.js', {
+        name: 'PartyTownMock',
+        type: 'module',
+      });
+
+      // Create the SharedArrayBuffer
+      const sab = new SharedArrayBuffer(100);
+      // Create a int32 View
+      const int32 = new Int32Array(sab);
+      // Create a uint8 View
+      const uint8 = new Uint8Array(sab);
+
+      worker.onmessage = (event) => {
+        if (!event.data) {
+          return;
+        }
+
+        // Get the property
+        const property = document[event.data];
+
+        // Encode it
+        const data = new TextEncoder().encode(property);
+
+        // Set it on the SAB
+        uint8.set(data, 4);
+
+        // Store a new value in the
+        Atomics.store(int32, 0, 1);
+        // Notify all waiting threads that this value changed
+        Atomics.notify(int32, 0, 1);
+      };
+
+      // Send the SAB that will be used for communication
+      worker.postMessage({ sab });
+
+      // Let's execute the fake google analytics script
+      worker.postMessage({
+        type: 'google_analytics',
+      });
+    </script>
+  </body>
+</html>
