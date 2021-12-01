@@ -8,22 +8,22 @@ This example calculates the n-th [fibonacci](https://en.wikipedia.org/wiki/Fibon
 
 For example, if you provide the number 10, the result will be 55.
 
-## Excercise
+## exercise
 
-### Excercise 1
+### exercise 1
 
 The starter exercise calculates the fibonacci number on the main thread. Refactor this exercise to calculate the
 fibonacci number in a Web Worker.
 
 
-### Excercise 2
+### exercise 2
 
 Currently, if we calculate the fibonacci number, we can't cancel it and calculate a new one. The reason is that
 the running Web Worker is blocked by the current calculation. In order to fix this we can check if we have a
 running Web Worker and terminate it first. Then create a new worker and calculate the new fibonacci number.
 
 
-### Excercise 3
+### exercise 3
 
 Always creating a new worker comes with some overhead. It would be better if we could cancel the current worker and
 re-use it to calculate the new fibonacci number.
@@ -62,7 +62,7 @@ module.exports = {
 </details>
 
 
-### Excercise 4
+### exercise 4
 
 Using `postMessage` and `onmessage` to communicate with workers often doesn't feel very developer friendly. To make
 this more enjoyable, we can use [`Comlink`](https://github.com/GoogleChromeLabs/comlink).
