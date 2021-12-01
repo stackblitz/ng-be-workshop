@@ -1,6 +1,6 @@
 # Angular ToDo
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/3-angular-todo?file=README.md)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/stackblitz/ng-be-workshop/tree/main/exercises/webworkers/4-angular-todo?file=README.md)
 
 After starting the application, you will see that you can add items to a ToDo list, and remove them by clicking
 on the item itself. The state is stored in `LocalStorage`, so after refreshing the page, the ToDo items should

@@ -1,5 +1,5 @@
 {
-  "name": "fibonacci-step2-webworker-abort",
+  "name": "party-town",
   "scripts": {
     "start": "lite-server -c browsersync.config.js"
   },
