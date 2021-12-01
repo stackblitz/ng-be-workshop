@@ -35,12 +35,7 @@ function createAbortController(resolve) {
   return {
     signal: sab,
     abort() {
-      /**
-       * We could also use array notation (e.g. abortSignal[0]) to read and write the byte which
-       * is not wrong in this case. But if timing matters, `Atomics` are definitely the preferred
-       * choice.
-       */
-      Atomics.store(abortSignal, 0, 1);
+      abortSignal[0] = 1;
 
       resolve();
     },

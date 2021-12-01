@@ -31,6 +31,10 @@ re-use it to calculate the new fibonacci number.
 In order to do this, we can use a [SharedArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
 to cancel the fibonacci loop. If the loop is cancelled, the same worker can accept new work that can be processed.
 
+**Tip**: You can use a `SharedArrayBuffer` of 1 byte which is shared between the main thread and the worker thread. Wrap
+the memory in a `Uint8Array` so you can update and read the byte in both threads. Setting the byte to `1` should stop
+the recursive loop.
+
 **Note**: Think about cross-site isolation! Headers have to be added to the top-level page. This can be done via the
 `browsersync.config.js` file. Also make sure to open the website in a separate browser window. Setting these headers
 currently doesn't work inside StackBlitz.

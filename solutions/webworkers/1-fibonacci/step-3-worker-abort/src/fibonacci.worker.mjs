@@ -1,5 +1,5 @@
 function fibonacci(position, abortSignal) {
-  if (Atomics.load(abortSignal, 0) === 1) {
+  if (abortSignal[0] === 1) {
     // break out of calculation if the abort signal is set to 1
     throw new Error('Aborted');
   }
