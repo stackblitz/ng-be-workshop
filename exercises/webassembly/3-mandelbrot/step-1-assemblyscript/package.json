@@ -1,0 +1,20 @@
+{
+  "name": "node-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "npm run build && lite-server -c browser-sync.config.js",
+    "build": "asc ./src/mandelbrot.ts -O3 -o ./.dist/mandelbrot.wasm -t ./.dist/mandelbrot.wat --sourceMap"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.19.20",
+    "lite-server": "^2.6.1"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "useTabs": false,
+    "tabWidth": 2,
+    "semi": true,
+    "bracketSpacing": true
+  }
+}
