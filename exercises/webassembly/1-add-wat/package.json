@@ -1,0 +1,13 @@
+{
+  "name": "1-add-wat",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "mkdir .dist",
+    "start": "npm run build && lite-server -c browser-sync.config.js",
+    "build": "wat2wasm ./src/add.wat -o ./.dist/add.wasm"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "wat2wasm": "^3.0.0"
+  }
+}

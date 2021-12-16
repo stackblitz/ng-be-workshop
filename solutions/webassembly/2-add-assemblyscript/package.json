@@ -1,0 +1,12 @@
+{
+  "name": "2-add-assemblyscript",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "npm run build && lite-server -c browser-sync.config.js",
+    "build": "asc ./src/add.ts -O3 -o ./.dist/add.wasm -t ./.dist/add.wat --sourceMap"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.19.22",
+    "lite-server": "^2.6.1"
+  }
+}
